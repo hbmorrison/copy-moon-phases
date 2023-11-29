@@ -1,0 +1,18 @@
+// This is the publically available moon phases calendar provided by Google.
+const CALENDARS_TO_MERGE = {
+  'Moon Phases': 'ht3jlfaac5lfd6263ulfh4tql8@group.calendar.google.com',
+};
+
+// The ID of the shared calendar
+const CALENDAR_TO_MERGE_INTO = 'family00000000000000000000@group.calendar.google.com';
+
+// Number of days in the past and future to sync.
+const SYNC_DAYS_IN_PAST = 90;
+const SYNC_DAYS_IN_FUTURE = 90;
+
+// Unique character to use in the title of the event to identify it as a clone.
+// This is used to delete the old events.
+// https://unicode-table.com/en/200B/
+const SEARCH_CHARACTER = '\u200B';
+
+const ENDPOINT_BASE = 'https://www.googleapis.com/calendar/v3/calendars';
